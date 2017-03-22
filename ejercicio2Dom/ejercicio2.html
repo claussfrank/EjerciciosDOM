@@ -16,10 +16,25 @@
 
 	<script>
 		//Escribe aquí tu código Javascript
-		var clases = document.getElementsByClassName("mensaje");
-		
-
-
+function mensajes(){
+	var clases = document.getElementsByClassName("mensaje");
+	 switch (clases.length) {
+		case 0:
+			alert("Sin mensaje");
+			break;
+		case 1:
+			alert("Es muy poco");
+			break;
+		case 2:
+		case 3:
+			alert("No está mal");
+			break;
+		default:
+			alert("Son muchos !");
+			break;
+		}
+}
+mensajes();
 	</script>
 </body>
 </html>
